@@ -1,36 +1,32 @@
 <html>
 	<head>
 	<title>Hello calculator</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
 	<script src="scripts/script.js"></script>
-	<style>
-	   .b1 {
-		font-size: 18pt;
-	   }
-  </style>
 	</head>
 
-	<body>
+	<body onload="initialization()">
 		<form>
 			<table border="1">
 			<td>
 				<input type="text" id="display" class="b1" style="width:300px;height:50px">
-				<button type="button" class="b1" onclick = "clearscreen()" style="width:90px;height:50px">clr</button> <br>
-				<button type="button" class="b1" onclick = "input(1)" style="width:75px;height:75">1</button> 
-				<button type="button" class="b1" onclick = "input(2)" style="width:75;height:75">2</button> 
-				<button type="button" class="b1" onclick = "input(3)" style="width:75;height:75">3</button>
-				<button type="button" class="b1" onclick = "operation('-')" style="width:75;height:75">-</button>
-				<button type="button" class="b1" onclick = "operation('+')" style="width:75;height:75">+</button><br>
-				<button type="button" class="b1" onclick = "input(4)" style="width:75;height:75">4</button> 
-				<button type="button" class="b1" onclick = "input(5)" style="width:75;height:75">5</button> 
-				<button type="button" class="b1" onclick = "input(6)" style="width:75;height:75">6</button>
-				<button type="button" class="b1" onclick = "operation('*')" style="width:75;height:75">*</button>
-				<button type="button" class="b1" onclick = "output()" style="width:75;height:75">=</button><br>
-				<button type="button" class="b1" onclick = "input(7)" style="width:75;height:75">7</button> 
-				<button type="button" class="b1" onclick = "input(8)" style="width:75;height:75">8</button> 
-				<button type="button" class="b1" onclick = "input(9)" style="width:75;height:75">9</button>
-				<button type="button" class="b1" onclick = "operation('/')" style="width:75;height:75">/</button><br>
+				<button type="button" class="b1" onclick = "clearScreen()" style="width:90px;height:50px">clr</button> <br>
+				<button type="button" class="b1" onclick = "input(1)" >1</button> 
+				<button type="button" class="b1" onclick = "input(2)" >2</button> 
+				<button type="button" class="b1" onclick = "input(3)" >3</button>
+				<button type="button" class="b1" onclick = "operation('-')" >-</button>
+				<button type="button" class="b1" onclick = "operation('+')" >+</button><br>
+				<button type="button" class="b1" onclick = "input(4)" >4</button> 
+				<button type="button" class="b1" onclick = "input(5)" >5</button> 
+				<button type="button" class="b1" onclick = "input(6)" >6</button>
+				<button type="button" class="b1" onclick = "operation('*')" >*</button>
+				<button type="button" class="b1" onclick = "output()" >=</button><br>
+				<button type="button" class="b1" onclick = "input(7)" >7</button> 
+				<button type="button" class="b1" onclick = "input(8)" >8</button> 
+				<button type="button" class="b1" onclick = "input(9)" >9</button>
+				<button type="button" class="b1" onclick = "operation('/')" >/</button><br>
 				<button type="button" class="b1" onclick = "input(0)" style="width:150;height:75">0</button>
-				<button type="button" class="b1" onclick = "point()" style="width:75;height:75">,</button><br>
+				<button type="button" class="b1" onclick = "point()" >,</button><br>
 			</td>
 			</table>
 			v1 = <input type="text" id="display1" class="b1" style="width:300px;height:50px"><br>
